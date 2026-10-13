@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Cocina</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e65100">
+</head>
+<body>
+
+  <header>
+    <h1>🍳 Mi Recetario PWA</h1>
+    <button id="btn-install" style="display:none;">📱 Instalar App</button>
+  </header>
+
+  <main>
+    <!-- Estado de Red -->
+    <div id="status-bar" class="online">Estado: Conectado</div>
+
+    <!-- Solicitar Notificaciones -->
+    <section>
+      <button id="btn-notify">🔔 Activar Notificaciones</button>
+    </section>
+
+    <!-- Formulario Agregar Receta -->
+    <section class="card">
+      <h2>Nueva Receta</h2>
+      <form id="recipe-form">
+        <input type="text" id="title" placeholder="Nombre de la receta" required>
+        <textarea id="ingredients" placeholder="Ingredientes" required></textarea>
+        <button type="submit">Guardar Receta</button>
+      </form>
+    </section>
+
+    <!-- Lista de Recetas -->
+    <section>
+      <h2>Mis Recetas</h2>
+      <div id="recipe-list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

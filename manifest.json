@@ -1,0 +1,17 @@
+{
+  "name": "Recetario PWA",
+  "short_name": "Cocina",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e65100",
+  "description": "Guarda y consulta tus recetas favoritas.",
+  "icons": [
+    {
+      "src": "icons/recetario.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
